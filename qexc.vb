@@ -8,7 +8,7 @@ Public Sub qexc_HighlightCell(cell As Range)
     End With
     cell.Font.Bold = True
 End Sub
-
+ 
 Public Sub qexc_UnhighlightCell(cell As Range)
     With cell.Interior
         .Pattern = xlSolid
@@ -19,3 +19,9 @@ Public Sub qexc_UnhighlightCell(cell As Range)
     End With
     cell.Font.Bold = False
 End Sub
+
+Public Sub qexc_GotoWorksheet(theWorksheet As String)
+    Sheets(theWorksheet).Activate
+    Sheets(theWorksheet).Range("A1").Select
+End Sub
+
