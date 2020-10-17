@@ -2,7 +2,12 @@
 
 This project contains two files that can be used to solve problems with Excel: (1) *main.xlsm* is a worksheet which has VBA code modules that enable you to more quickly built an interactive Excel sheet, and (2) *intervalProcessor.xlsm* is a worksheet which processes code at a given interval, e.g. once per second or once per minute which enables you to create solutions outside of Excel itself, e.g. monitor when files are copied to directories, display them in excel sheets, update excel sheets and other files, access databases on the network, etc.
 
-**How to use main.xlsm:**
+**Explore code**
+
+- for basic VBA interactivity, in the worksheet *Main*, try all the buttons
+- for singular/plural class code, in the VBA code (F11), open the module *DataPersons* and in *TestPluralClass()* click F5
+
+**How to use main.xlsm for a new project:**
 
 - open the main.xlsm file
 - experiment with the examples on the worksheet
