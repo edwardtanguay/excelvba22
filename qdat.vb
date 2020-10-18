@@ -19,3 +19,11 @@ End Function
 Function qdat_PaddedDay(TheDate As Date) As String
     qdat_PaddedDay = qstr_PadTwoZeros(Day(TheDate))
 End Function
+
+Function qdat_numberOfDaysInMonth(theDate As Date)
+    var_month = Month(theDate)
+    var_year = Year(theDate)
+    date_next_month = DateSerial(var_year, var_month + 1, 1)
+    last_day_month = date_next_month - 1
+    qdat_numberOfDaysInMonth = Day(last_day_month)
+End Function

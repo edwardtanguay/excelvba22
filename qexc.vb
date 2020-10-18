@@ -25,3 +25,12 @@ Public Sub qexc_GotoWorksheet(theWorksheet As String)
     Sheets(theWorksheet).Range("A1").Select
 End Sub
 
+Public Sub qexc_FormatCell(cell As Range, theBackgroundColor As Integer, theFontColor As String)
+    cell.Interior.ColorIndex = theBackgroundColor
+    cell.Font.Bold = False
+    If theFontColor = "white" Then
+        cell.Font.Color = vbWhite
+    Else
+        cell.Font.Color = vbBlack
+    End If
+End Sub
