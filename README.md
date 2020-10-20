@@ -7,6 +7,7 @@ This project contains two files that can be used to solve problems with Excel: (
 - for basic VBA interactivity, in the worksheet *Main*, try all the buttons
 - for singular/plural class code, in the VBA code (F11), open the module *DataPersons* and in *TestPluralClass()* click F5
 	- this reads the data from the DataPersons worksheet and builds a collection of objects, then iterates through it and writes the data out to a text file in the directory where the Excel file is
+- look through and experiment with the tests in the module called "TESTS"
 
 **How to use main.xlsm for a new project:**
 
